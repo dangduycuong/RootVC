@@ -16,10 +16,16 @@
 		2296473F26A55C1200C9D330 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296473E26A55C1200C9D330 /* HomeTabBarController.swift */; };
 		2296474326A55C9E00C9D330 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296474226A55C9E00C9D330 /* Storyboard.swift */; };
 		2296474726A55CD300C9D330 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296474626A55CD300C9D330 /* UIViewController.swift */; };
-		2296474A26A55CF800C9D330 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296474926A55CF800C9D330 /* Identifier.swift */; };
 		2296474D26A55DAB00C9D330 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296474C26A55DAB00C9D330 /* DashBoardViewController.swift */; };
 		2296475026A55E3000C9D330 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296474F26A55E3000C9D330 /* ApplicationManager.swift */; };
 		2296475426A55FA600C9D330 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296475326A55FA600C9D330 /* BaseViewController.swift */; };
+		2296475C26A5671F00C9D330 /* DashBoardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296475A26A5671F00C9D330 /* DashBoardCollectionView.swift */; };
+		2296475D26A5671F00C9D330 /* DashBoardCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2296475B26A5671F00C9D330 /* DashBoardCollectionView.xib */; };
+		2296476126A56DAF00C9D330 /* MyLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296476026A56DAF00C9D330 /* MyLoadViewController.swift */; };
+		2296476426A570CA00C9D330 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296476326A570CA00C9D330 /* AboutViewController.swift */; };
+		2296476926A5854800C9D330 /* LoadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296476726A5854800C9D330 /* LoadTableViewCell.swift */; };
+		2296476A26A5854800C9D330 /* LoadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2296476826A5854800C9D330 /* LoadTableViewCell.xib */; };
+		22FF829626A679990039610E /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF829526A679990039610E /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +40,16 @@
 		2296473E26A55C1200C9D330 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		2296474226A55C9E00C9D330 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		2296474626A55CD300C9D330 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		2296474926A55CF800C9D330 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		2296474C26A55DAB00C9D330 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		2296474F26A55E3000C9D330 /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
 		2296475326A55FA600C9D330 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2296475A26A5671F00C9D330 /* DashBoardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCollectionView.swift; sourceTree = "<group>"; };
+		2296475B26A5671F00C9D330 /* DashBoardCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardCollectionView.xib; sourceTree = "<group>"; };
+		2296476026A56DAF00C9D330 /* MyLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoadViewController.swift; sourceTree = "<group>"; };
+		2296476326A570CA00C9D330 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		2296476726A5854800C9D330 /* LoadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTableViewCell.swift; sourceTree = "<group>"; };
+		2296476826A5854800C9D330 /* LoadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadTableViewCell.xib; sourceTree = "<group>"; };
+		22FF829526A679990039610E /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +87,13 @@
 				2296475226A55F9100C9D330 /* Base */,
 				2296474126A55C8A00C9D330 /* Extensions */,
 				2296472D26A55B6300C9D330 /* ViewController.swift */,
+				2296475826A566E100C9D330 /* DashBoard */,
 				2296474F26A55E3000C9D330 /* ApplicationManager.swift */,
+				2296476626A5853500C9D330 /* LoadTableViewCell */,
+				2296476026A56DAF00C9D330 /* MyLoadViewController.swift */,
 				2296473E26A55C1200C9D330 /* HomeTabBarController.swift */,
 				2296474C26A55DAB00C9D330 /* DashBoardViewController.swift */,
+				2296476326A570CA00C9D330 /* AboutViewController.swift */,
 				2296472F26A55B6300C9D330 /* Main.storyboard */,
 				2296473226A55B6500C9D330 /* Assets.xcassets */,
 				2296473426A55B6500C9D330 /* LaunchScreen.storyboard */,
@@ -91,7 +107,6 @@
 			children = (
 				2296474226A55C9E00C9D330 /* Storyboard.swift */,
 				2296474626A55CD300C9D330 /* UIViewController.swift */,
-				2296474926A55CF800C9D330 /* Identifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -100,8 +115,35 @@
 			isa = PBXGroup;
 			children = (
 				2296475326A55FA600C9D330 /* BaseViewController.swift */,
+				22FF829526A679990039610E /* BaseNavigationController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		2296475826A566E100C9D330 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2296475926A566F500C9D330 /* DashBoardCollectionView */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		2296475926A566F500C9D330 /* DashBoardCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2296475A26A5671F00C9D330 /* DashBoardCollectionView.swift */,
+				2296475B26A5671F00C9D330 /* DashBoardCollectionView.xib */,
+			);
+			path = DashBoardCollectionView;
+			sourceTree = "<group>";
+		};
+		2296476626A5853500C9D330 /* LoadTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2296476726A5854800C9D330 /* LoadTableViewCell.swift */,
+				2296476826A5854800C9D330 /* LoadTableViewCell.xib */,
+			);
+			path = LoadTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +206,8 @@
 				2296473626A55B6500C9D330 /* LaunchScreen.storyboard in Resources */,
 				2296473326A55B6500C9D330 /* Assets.xcassets in Resources */,
 				2296473126A55B6300C9D330 /* Main.storyboard in Resources */,
+				2296476A26A5854800C9D330 /* LoadTableViewCell.xib in Resources */,
+				2296475D26A5671F00C9D330 /* DashBoardCollectionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,12 +221,16 @@
 				2296475026A55E3000C9D330 /* ApplicationManager.swift in Sources */,
 				2296472E26A55B6300C9D330 /* ViewController.swift in Sources */,
 				2296474326A55C9E00C9D330 /* Storyboard.swift in Sources */,
+				2296476926A5854800C9D330 /* LoadTableViewCell.swift in Sources */,
 				2296474726A55CD300C9D330 /* UIViewController.swift in Sources */,
-				2296474A26A55CF800C9D330 /* Identifier.swift in Sources */,
 				2296475426A55FA600C9D330 /* BaseViewController.swift in Sources */,
 				2296472A26A55B6300C9D330 /* AppDelegate.swift in Sources */,
 				2296473F26A55C1200C9D330 /* HomeTabBarController.swift in Sources */,
+				22FF829626A679990039610E /* BaseNavigationController.swift in Sources */,
 				2296472C26A55B6300C9D330 /* SceneDelegate.swift in Sources */,
+				2296475C26A5671F00C9D330 /* DashBoardCollectionView.swift in Sources */,
+				2296476126A56DAF00C9D330 /* MyLoadViewController.swift in Sources */,
+				2296476426A570CA00C9D330 /* AboutViewController.swift in Sources */,
 				2296474D26A55DAB00C9D330 /* DashBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,3 +23,19 @@ extension UIViewController: Identifier {
         return UINib(nibName: self.identifierView, bundle: nil)
     }
 }
+
+
+import Foundation
+import UIKit
+
+//
+// MARK: - Identifier
+// Easily to get ViewID and XIB file
+protocol Identifier {
+    
+    /// ID view
+    static var identifierView: String {get}
+
+    /// XIB - init XIB from identifierView
+    static func xib() -> UINib?
+}
