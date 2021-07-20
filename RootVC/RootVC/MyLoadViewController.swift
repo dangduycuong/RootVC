@@ -17,6 +17,11 @@ class MyLoadViewController: BaseViewController {
 //        tableView.registerCell(LoadTableViewCell.self)
         tableView.register(LoadTableViewCell.nib(), forCellReuseIdentifier: LoadTableViewCell.identifier())
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        title = "My Loads"
+    }
 
 }
 

@@ -71,7 +71,7 @@ class DashBoardCollectionView: UICollectionViewCell {
     private func setupUI() {
         
         subContentView.layer.shadowColor = UIColor.black.cgColor
-        subContentView.layer.shadowOpacity = 0.35
+        subContentView.layer.shadowOpacity = 0.75
         subContentView.layer.shadowOffset = .zero
 //        subContentView.layer.shadowRadius = 3
 //
@@ -83,7 +83,7 @@ class DashBoardCollectionView: UICollectionViewCell {
         
         subContentView.layer.cornerRadius = 16
         subContentView.layer.masksToBounds = true
-        subContentView.layer.shadowRadius = 8
+        subContentView.layer.shadowRadius = 3
         
         subContentView.addSubview(image)
         image.translatesAutoresizingMaskIntoConstraints = false

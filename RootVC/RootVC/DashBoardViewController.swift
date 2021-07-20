@@ -13,6 +13,7 @@ class DashBoardViewController: BaseViewController {
     
     fileprivate lazy var titleLabel: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
 //        label.font = LatoFont.bold(with: 16)
         label.textAlignment = .center
         label.textColor = .white
@@ -30,14 +31,15 @@ class DashBoardViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Dash Board"
         collectionView.register(DashBoardCollectionView.nib(), forCellWithReuseIdentifier: DashBoardCollectionView.identifier())
         collectionView.isScrollEnabled = false
 //        showTitileLabel(title: "DashBoard")
-//        navigationItem.titleView = titleLabel
+        setupUI()
     }
     
-    
+    private func setupUI() {
+        navigationItem.titleView = titleLabel
+    }
     
     @IBAction func backToRootView(_ sender: Any) {
         if let keyWindow = ApplicationManager.shared.getKeyWindow() {
@@ -63,7 +65,7 @@ extension DashBoardViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = AboutViewController()
+        let vc = UIStoryboard.storyBoard(.main).viewController(of: AboutViewController.self)
         vc.title = DashBoardItemType.all[indexPath.row].title
         vc.modalPresentationStyle = .overFullScreen
         navigationController?.pushViewController(vc, animated: true)
