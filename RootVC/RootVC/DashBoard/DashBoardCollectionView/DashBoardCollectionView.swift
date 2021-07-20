@@ -69,21 +69,13 @@ class DashBoardCollectionView: UICollectionViewCell {
     }
     
     private func setupUI() {
+        subContentView.layer.cornerRadius = 8
+        subContentView.layer.shadowColor = UIColor.gray.cgColor
+        subContentView.layer.shadowOpacity = 0.5
         
-        subContentView.layer.shadowColor = UIColor.black.cgColor
-        subContentView.layer.shadowOpacity = 0.75
-        subContentView.layer.shadowOffset = .zero
-//        subContentView.layer.shadowRadius = 3
-//
-////        containerView.layer.shadowPath = UIBezierPath(rect: containerView.bounds).cgPath
-        subContentView.layer.shouldRasterize = true
-////        containerView.layer.rasterizationScale = UIScreen.main.scale
-//        subContentView.layer.cornerRadius = 16
-        
-        
-        subContentView.layer.cornerRadius = 16
-        subContentView.layer.masksToBounds = true
-        subContentView.layer.shadowRadius = 3
+        subContentView.layer.shadowOffset.width = 3.5
+        subContentView.layer.shadowOffset.height = 3.5
+        subContentView.layer.shadowRadius = 5
         
         subContentView.addSubview(image)
         image.translatesAutoresizingMaskIntoConstraints = false
